@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-
+Module 7-add_item
 Contains function that adds and saves to Python obj to JSON file; loads objects
-# 
-
+# run with ./7-add_item.py
+#
 # cat add_item.json ; echo ""
 # expect output: []
 #
-# .
+# ./7-add_item.py some random args
 # cat add_item.json ; echo ""
 # expect output: ["some", "random", "args"]
 """
@@ -25,3 +25,8 @@ except FileNotFoundError:
     existing_content = []
 
 save_to_json_file(existing_content + argv[1:], filename)
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+P
